@@ -1,7 +1,9 @@
 import "./CharacterCard.css"
 
 export default function CharacterCard ({ character }) {
-    const imgURL = `${character.thumbnail.path}.${character.thumbnail.extension}`
+    const imgURL = new URL(`${character.thumbnail.path}.${character.thumbnail.extension}`)
+    imgURL.protocol = "https:"
+    
     const linkAltText = `${character.name} on Marvel.com`
 
     const urlObject = character.urls.find(urlObject => urlObject.type === "wiki") // or backup links if there is no wiki link for this character...
