@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Counter from "./components/Counter/Counter"
+import MarvelSearchGallery from './components/MarvelSearchGallery/MarvelSearchGallery'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <main>
+      <h1>Marvel Character Search</h1>
+
+      <section className="counters">
+        <Counter initialCount={0} />
+        <Counter initialCount={-100} />
+        <Counter initialCount={400} />
+      </section>
+
+      <MarvelSearchGallery defaultSearchTerm="spider" />
+    </main>
+  )
 }
 
-export default App;
+export default App

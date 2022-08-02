@@ -1,0 +1,34 @@
+.CharacterCard {
+    margin: var(--spacing);
+    padding: var(--spacing);
+    width: var(--width);
+    min-height: var(--height);  /* This is what makes all (or most) of our character cards the same height, despite having images of different heights. */
+}
+
+.CharacterCard:hover {
+    outline: 1px solid white;
+}
+
+.CharacterCard > img {
+    width: var(--width);
+}
+
+.CharacterCard > a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.CharacterCard > a:hover {
+    color: lightgoldenrodyellow;
+    text-decoration: underline;
+}
+
+.CharacterCard .name-first-line {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.CharacterCard .name-second-line {
+    text-align: center;
+}

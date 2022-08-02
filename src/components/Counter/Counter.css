@@ -1,0 +1,15 @@
+.Counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Counter > strong {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: lemonchiffon;
+}
+
+.Counter > .reset {
+    margin-left: 0.5rem;
+}

@@ -1,0 +1,8 @@
+#MarvelSearchGallery .gallery {
+    margin-top: 2rem;
+    max-width: 80vw;  /* 80% of the width of the page */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
