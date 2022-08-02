@@ -14,7 +14,7 @@ export default function MarvelSearchGallery ({ defaultSearchTerm="spider" }) {
         const searchInputElement = event?.target.elements.search
         searchMarvelCharacters(searchInputElement?.value || defaultSearchTerm)
             .then(characters => {
-                console.log(characters)
+                console.log("Characters:", characters)
                 setCharacters(characters)
             })
     }
