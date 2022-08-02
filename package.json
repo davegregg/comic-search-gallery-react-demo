@@ -2,7 +2,7 @@
   "name": "comic-character-search-gallery-spring22-1-react",
   "version": "0.3.0",
   "private": true,
-  "homepage": "https://davegregg.github.io/react-clock-demo",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -15,6 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "npx gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
